@@ -128,6 +128,12 @@
         #map {
             filter: grayscale(70%) invert(98%) contrast(87%)
         }
+
+        #msgNoti {
+            font-size: 12px;
+            margin-top: 15px;
+            margin-left: 150px;
+        }
     </style>
 </head>
 
@@ -168,12 +174,14 @@
                     </div>
                     <div class="details">
                         <label for="phoneInput">Phone</label>
-                        <input type="number" id="phoneInput" class="input" placeholder="Enter your phone number" name="Phone">
+                        <input type="number" id="phoneInput" class="input" placeholder="Enter your phone number"
+                            name="Phone">
                         <hr>
                     </div>
                     <div class="details">
                         <label for="addressInput">Address</label>
-                        <input type="text" id="addressInput" class="input" placeholder="Enter your address" name="Address">
+                        <input type="text" id="addressInput" class="input" placeholder="Enter your address"
+                            name="Address">
                         <hr>
                     </div>
                     <div class="details" id="msgDiv">
@@ -182,6 +190,7 @@
                         <hr>
                     </div>
                     <button id="submit">Submit!</button>
+                    <p id="msgNoti"></p>
                 </form>
             </div>
             <div class="msgOnInsta">
@@ -217,6 +226,7 @@
         let msgInput = document.querySelector('#msgInput');
 
         submit.addEventListener('click', () => {
+            document.querySelector('#msgNoti').innerText = "Message sent successfully!"
             // nameInput.value = "";
             // emailInput.value = "";
             // phoneInput.value = "";
