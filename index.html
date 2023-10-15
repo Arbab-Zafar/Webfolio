@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbab's Webfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="shortcut icon" href="/images/favicon2.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/WebFolio Logo.png" alt="" id="logo">
+            <div class="links">
+                <a href="/" class="link">Home</a>
+                <a href="about" class="link">About</a>
+                <a href="contact" class="link">Contact</a>
+                <a href="websites" class="link">Websites</a>
+                <div class="linksIcon">
+                    <a href="https://www.youtube.com/channel/UCfmb9LBNvtBUIGsIVncVe8w" target="blank"
+                        style="display: flex;"><img src="images/youtube.svg" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/_arbab.zafar/" target="blank" style="display: flex;"><img
+                            src="images/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="introSect">
+            <div class="picture">
+                <img src="images/insta_pfp.jpg" alt="">
+            </div>
+            <div class="introDiv">
+                <h1 id="h1">Arbab Zafar</h1>
+                <p>Explore the world of websites made by me, Arbab Zafar, a class IX 'A' student of Creane Memorial High
+                    School. Check out what I have made! From cool interactive sites to helpful ones, you'll see how much
+                    I enjoy making web stuff. Let's dive in and and get to know more about me and what I like to do!</p>
+            </div>
+        </section>
+        <section id="messageSect">
+            <h2>Leave a Message!</h2>
+            <form action="msg" method="post" class="msgInput" autocomplete="off">
+                <input type="text" placeholder="Eg. Hello" maxlength="130" id="sendMsgInput" name="Message">
+                <button id="sendMsgBtn">Send!</button>
+            </form>
+        </section>
+        <section id="featuredWebsites">
+            <h2>Featured Websites</h2>
+            <div class="featuredMainDiv">
+                <div class="card">
+                    <img src="images/PAW-logos_black.png" alt="logo" class="logo">
+                    <span class="cardTitle">Play And Win</span>
+                    <span class="cardDesc">It is collection of games!</span>
+                    <a href="#"><button class="cardVisit">Visit</button></a>
+                </div>
+                <div class="card">
+                    <img src="images/PAW-logos_black.png" alt="logo" class="logo">
+                    <span class="cardTitle">Magic Notes</span>
+                    <span class="cardDesc">It is collection of games!</span>
+                    <a href="#"><button class="cardVisit">Visit</button></a>
+                </div>
+                <div class="card">
+                    <img src="images/PAW-logos_black.png" alt="logo" class="logo">
+                    <span class="cardTitle">CoinShift</span>
+                    <span class="cardDesc">It is collection of games!</span>
+                    <a href="#"><button class="cardVisit">Visit</button></a>
+                </div>
+                <div class="card">
+                    <img src="images/PAW-logos_black.png" alt="logo" class="logo">
+                    <span class="cardTitle">Expense Tracker</span>
+                    <span class="cardDesc">It is collection of games!</span>
+                    <a href="#"><button class="cardVisit">Visit</button></a>
+                </div>
+                <div class="card">
+                    <img src="images/PAW-logos_black.png" alt="logo" class="logo">
+                    <span class="cardTitle">Arbab Resizer</span>
+                    <span class="cardDesc">It is collection of games!</span>
+                    <a href="#"><button class="cardVisit">Visit</button></a>
+                </div>
+                <div class="card">
+                    <img src="images/PAW-logos_black.png" alt="logo" class="logo">
+                    <span class="cardTitle">PDF Transformer</span>
+                    <span class="cardDesc">It is collection of games!</span>
+                    <a href="#"><button class="cardVisit">Visit</button></a>
+                </div>
+            </div>
+            <a href="websites.html"><button id="seeMore">See More</button></a>
+        </section>
+    </main>
+    <footer>
+        <section id="footerSect">
+            <p>Copyright &COPY; 2023 Arbab's WebFolio</p>
+            <p>~ Made by <i>Arbab Zafar</i></p>
+        </section>
+    </footer>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>

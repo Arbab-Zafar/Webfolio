@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbab's Webfolio - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon">
+    <style>
+        main {
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        .contact {
+            width: 85%;
+            margin: auto;
+            background-color: #1f1f1f;
+            padding: 25px 100px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact .main {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact .msgOnInsta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            margin: auto;
+        }
+
+        .msgOnInsta #visit {
+            text-decoration: underline;
+        }
+
+        .msgOnInsta #instaUsername:hover {
+            text-decoration: underline;
+        }
+
+        #msg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .msgOnInsta img {
+            border-radius: 100%;
+            border: 1px solid grey;
+        }
+
+
+        .contact .main .left {
+            width: 35%;
+        }
+
+        .contact .main .right {
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .right .details {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            margin-right: 5%;
+        }
+
+        .right #submit {
+            width: 95%;
+            color: black;
+            padding-block: 7px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid white;
+            outline: none;
+        }
+
+        #submit:active {
+            transform: translateY(3px);
+        }
+
+        #submit:hover {
+            padding-block: 8px;
+            background-color: rgb(237, 235, 235);
+        }
+
+        .details input {
+            background: transparent;
+            outline: none;
+            border: none;
+            height: 50px;
+            width: 100%;
+        }
+
+        .details hr {
+            margin-bottom: 10px;
+        }
+
+        .right #msgDiv {
+            width: 100%;
+        }
+
+        .mapDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .mapDiv p {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        #map {
+            filter: grayscale(70%) invert(98%) contrast(87%)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/WebFolio Logo.png" alt="" id="logo">
+            <div class="links">
+                <a href="/" class="link">Home</a>
+                <a href="about" class="link">About</a>
+                <a href="contact" class="link">Contact</a>
+                <a href="websites" class="link">Websites</a>
+                <div class="linksIcon">
+                    <a href="https://www.youtube.com/channel/UCfmb9LBNvtBUIGsIVncVe8w" target="blank"
+                        style="display: flex;"><img src="images/youtube.svg" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/_arbab.zafar/" target="blank" style="display: flex;"><img
+                            src="images/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contact">
+            <div class="main">
+                <div class="left">
+                    <h1>Contact</h1>
+                </div>
+                <form action="contact" method="post" class="right">
+                    <div class="details">
+                        <label for="nameInput">Name*</label>
+                        <input type="text" id="nameInput" class="input" placeholder="Enter your name" name="Name">
+                        <hr>
+                    </div>
+                    <div class="details">
+                        <label for="emailInput">E-mail*</label>
+                        <input type="email" id="emailInput" class="input" placeholder="Enter your email" name="Email">
+                        <hr>
+                    </div>
+                    <div class="details">
+                        <label for="phoneInput">Phone</label>
+                        <input type="number" id="phoneInput" class="input" placeholder="Enter your phone number" name="Phone">
+                        <hr>
+                    </div>
+                    <div class="details">
+                        <label for="addressInput">Address</label>
+                        <input type="text" id="addressInput" class="input" placeholder="Enter your address" name="Address">
+                        <hr>
+                    </div>
+                    <div class="details" id="msgDiv">
+                        <label for="msgInput">Message</label>
+                        <input type="text" id="msgInput" class="input" placeholder="Enter your message" name="Message">
+                        <hr>
+                    </div>
+                    <button id="submit">Submit!</button>
+                </form>
+            </div>
+            <div class="msgOnInsta">
+                <img src="images/InstaDP.jpg" alt="" class="insta_pfp" width="100">
+                <a href="https://www.instagram.com/_arbab.zafar/" target="_blank" id="instaUsername">_arbab.zafar</a>
+                <a href="https://www.instagram.com/_arbab.zafar/" target="_blank" id="visit">Visit Profile <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-xs" style="color: #ffffff;"></i></a>
+            </div>
+            <p id="msg">You can also message me on Instagram also! <img src="images/instagram.svg" alt="" width="20">
+            </p>
+        </div>
+        <div class="mapDiv">
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0057349774884!2d84.98390327379236!3d24.795257147866568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a5fcc4952af%3A0xac3c9238ea180b8e!2sMain%20Rd%2C%20Old%20Kareem%20Ganj%2C%20Kareem%20Ganj%2C%20Gaya%2C%20Bihar%20823001!5e0!3m2!1sen!2sin!4v1696164008393!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>The location given here is not precise!</p>
+        </div>
+    </main>
+    <footer>
+        <section id="footerSect">
+            <p>Copyright &COPY; 2023 Arbab's WebFolio</p>
+            <p>~ Made by <i>Arbab Zafar</i></p>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/84df3e5878.js" crossorigin="anonymous"></script>
+    <script>
+        let submit = document.querySelector('#submit');
+        let nameInput = document.querySelector('#nameInput');
+        let emailInput = document.querySelector('#emailInput');
+        let phoneInput = document.querySelector('#phoneInput');
+        let addressInput = document.querySelector('#addressInput');
+        let msgInput = document.querySelector('#msgInput');
+
+        submit.addEventListener('click', () => {
+            // nameInput.value = "";
+            // emailInput.value = "";
+            // phoneInput.value = "";
+            // addressInput.value = "";
+            // msgInput.value = "";
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
+                console.log("Good")
+            }
+            else {
+                console.log("You have entered an invalid email address!");
+            }
+
+        })
+    </script>
+</body>
+
+</html>
